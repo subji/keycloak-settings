@@ -1,0 +1,161 @@
+/* snbWrap */
+
+header .snbWrap .snbLi:after{background-color: rgba(255,255,255,0.25);}
+header .snbWrap .snbLi a{color: #fff !important;}
+
+header .snbWrap_bg{background: rgba(0,0,0,0.1); }
+.
+loadingType {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.table_slider.clearfix {
+  float: right;
+  height: 100%;
+  width: calc(100% - 268px);
+}
+
+
+/* 상세 날짜 표시 */
+#issueAnalysisRank{position: relative;}
+#issueAnalysisRank summary{}
+#issueAnalysisRank .week-date{display: block;line-height: 22px;margin-bottom: 0px;}
+#issueAnalysisRank .detail-date {color: #9e9e9e;font-size: 14px;position: relative;top: -6px;}
+
+.sensitive_table span.sensitive_label {  }
+
+/* 테이블 잘리는거 때문에 마진 오른쪽 왼쪽 값 0으로 설정 */
+.relation_wrap .table_wrap {margin-left: 0px;margin-right: 0px;outline: none;}
+.relation_wrap .table_wrap:last-child{}
+
+.relation_wrap .slick-list{overflow: hidden;}
+.relation_wrap .slick-arrow {cursor:pointer;display: inline-block;border: 0;position: absolute;top: 50%;margin-top: -22px;height: 44px;font-size: 0;text-indent: -9999px;z-index:1;background-color: transparent;width: 26px;outline: none;}
+
+.relation_wrap .slick-arrow:after{content:'';display: block;width: 28px;height: 27px;margin: 0 auto;background:url('https://sometrend-res.some.co.kr/images/issueAnalysisRank_arrow.png') 0 50%;background-repeat: no-repeat;position: relative;}
+
+.relation_wrap .slick-arrow.slick-prev{left: -34px;}
+.relation_wrap .slick-arrow.slick-next{right: -46px;}
+.relation_wrap .slick-arrow.slick-next:after {background-position: -33px;margin-left: -14px;}
+
+.relation_wrap .slick-arrow.slick-disabled{opacity: 0.2;cursor: default;}
+
+
+@media screen and (min-width:1200px){
+	.relation_wrap .table_wrap {margin-right: 10px !important;width: 304px !important;}
+}
+
+/* 카테고리 문구 옆 아래 화살표 제거 */
+.category_wrap .category_title::after { content: none; }
+
+/* 원문보기 텍스트 펼치고 접기 */
+.ellipsis-content { overflow: hidden; position: relative; line-height: 1.2em; display: -webkit-box; text-overflow: ellipsis; -webkit-box-orient: vertical; }
+.ellipsis-content.on { max-height: 4em; -webkit-line-clamp: 3; }
+
+
+/* 제목을 넣기위해 차트의 마진값 조정 */
+.repute_wrap .d3_wrap { width: 100%; margin-top: 30px; }
+
+/* 평판분석 - 평판요인분석 긍정, 부정, 중립 텍스트 색 설정 */
+.donut_wrap .donut_title .positive_text { color: #1b81e8; }
+.donut_wrap .donut_title .negative_text { color: #ff646a; }
+.donut_wrap .donut_title .neutral_text { color: #85C15A; }
+
+/* 테이블 overflow 값 조정 */
+.table-box-wrap .table-box {height: calc(100% - 63px);}
+
+.repute_table_wrap .table-box-wrap .table-box { height: calc(100% - 5px); }
+.repute_table_wrap .table-box-wrap .category_td{padding: 0 !important;}
+/* 분류체계 세로 -> 가로로 변경 */
+.contentInner.compare-category-image ul.category-list{background-color: #eff3f8;padding: 18px 15px 15px 15px;text-align: center;margin-top: 17px;}
+.contentInner.compare-category-image ul.category-list,
+.contentInner.compare-category-image ul.category-list li {}
+
+/* 카테고리내의 새로고침 버튼 조정 */
+.compare_chart_wrap .btnArea{text-align: right}
+.compare_chart_wrap .refresh_btn {line-height: 20px;color: #627aaa;border-radius: 100px;border: 1px solid #627aaa;background: white;font-family: 'NotoR',sans-serif;}
+.compare_chart_wrap .refresh_btn {}
+
+
+.contentInner.compare-category-image .category_title{}
+.contentInner.compare-category-image ul.category-list li {display: inline-block;margin: 0 5px;}
+.contentInner.compare-category-image .category_checkbox label { color: #333333; font-size: 14px;}
+
+.contentInner.compare-category-image .category_wrap {background-color: #fff;padding: 0; position: relative;}
+
+
+.contentInner.compare-category-image .category_checkbox label:before,
+.contentInner.compare-category-image .category_checkbox label:after{background-image: none;background-color: #dbdfe4;}
+
+.category_wrap .compare_btnArea.btnArea{margin-top: 16px;}
+.category_wrap .compare_refresh_btn.refresh_btn:before{display: none;}
+
+
+
+.contentInner.compare-category-image .category_checkbox input[type="checkbox"]:checked+label::after {width: 12px;height: 12px;line-height: 12px;color: #fff;top: 4px;left: 0px;font-family: 'Material-Design-Iconic-Font';content: "\f26b";
+text-align: center;font-size: 10px;}
+
+/* 달력 마우스 커서 변경 */
+input.input_date { cursor: pointer; }
+
+/* swiper 라이브러리 크기 설정 */
+.swiper-container {height: 100%;}
+
+/* swiper 라이브러리 화살표 감춤 */
+.swiper-button-next.swiper-button-disabled,
+.swiper-button-prev.swiper-button-disabled  { display: none; }
+
+/* 원문보기 헤드 길이 초과 방지 */
+.list_contents h6 { }
+
+/* #issueSentimentNoData,
+#issueTransitionNoData,
+#reputationFactorNoData,
+#compareTransitionNoData,
+#compareByCategoryNoData, */
+#issueAnalysisRankNoData {
+  height: 100%;
+  line-height: 25;
+  text-align: center;
+  border: 1px solid #ebebeb;
+}
+
+/* #reputationAssociationNoData  {
+  height: 100%;
+  line-height: 25;
+  margin-left: 16%;
+  text-align: center;
+  border: 1px solid #ebebeb;
+} */
+/* 
+  이슈분석 - 감성어 날짜 스타일 추가
+  날짜: 2020.03.20.
+  작성자: 박지섭
+ */
+#issueSentimentSlick .week-date,
+#issueSentimentSlick .month-date,
+#compareSentimentSlick .week-date,
+#compareSentimentSlick .month-date {display: block;line-height: 22px;margin-bottom: 0px;font-family: 'NotoM', sans-serif;text-align: center;font-size: 27px;margin-top: 15px;margin-bottom: 16px;color: #4d4d4d;}
+
+#issueSentimentSlick .detail-date,
+#compareSentimentSlick .detail-date {color: #848484;font-size: 16px;position: relative;top: -6px;font-family: 'NotoDL', sans-serif;text-align: center;}
+#issueSentimentSlick .slick-arrow:after,
+#compareSentimentSlick .slick-arrow:after {content: '';display: block;width: 18px;height: 27px;margin: 0 auto;background: url(https://sometrend-res.some.co.kr/images/issueAnalysisRank_arrow.png) 0 50%;background-repeat: no-repeat;position: relative;}
+#issueSentimentSlick .slick-arrow:before,
+#compareSentimentSlick .slick-arrow:before { content: ''; }
+#issueSentimentSlick .slick-arrow.slick-next:after,
+#compareSentimentSlick .slick-arrow.slick-next:after { background-position: right;  }
+#issueSentimentSlick .slick-arrow.slick-disabled,
+#compareSentimentSlick .slick-arrow.slick-disabled { opacity: 0.2; cursor: default; }
+
+#compareSentimentSlick .slick-slide{outline: none;margin: 0 30px;}
+#issueSentimentSlick .slick-prev, #issueSentimentSlick .slick-next{height: 40px}
+.sensitiveSVG_wrap { width: 767px; margin-left: 50px; }
+.sensitiveTable_wrap { margin-right: 50px; }
+.slick-prev { left: 0px; z-index: 9999; }
+.slick-next { right: 0px; z-index: 9999; }
+
+.sentiment-graph-wrap { margin-top: 5px; }
+/* .sentiment-bar { margin-bottom: 15px; } */
+

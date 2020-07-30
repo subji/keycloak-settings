@@ -1,0 +1,67 @@
+@charset "UTF-8";
+
+.pagination-sm {
+    margin-top: 40px;
+    padding-top: 32px;
+    text-align: center;
+}
+
+.page-item.active {
+    color: #3a3a3a;
+    border-color: #3a3a3a;
+}
+
+.page-item {
+    display: inline-block;
+    font-size: 14px;
+    color: #a7a7a7;
+    width: 26px;
+    height: 26px;
+    line-height: 24px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    margin: 0 3px;
+    vertical-align: middle;
+    text-align: center;
+}
+.page-item a{display: block; text-align: center; position : inherit !important}
+.page-item.first,
+.page-item.prev,
+.page-item.next,
+.page-item.last{
+    text-indent: -9999px;
+    font-size: 0;
+    height: 16px;
+    background-image: url('https://sometrend-res.some.co.kr/images/pagination_bg.png');
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.page-item.first,
+.page-item.last{
+}
+.page-item.prev,
+.page-item.next{
+	width: 14px;
+}
+
+.pagination{display:block}
+/* .page-item.first, .page-item.prev, .page-item.next, .page-item.last{width: 24px;
+			    height: 24px;
+			    line-height: 24px;
+			    border: 1px solid #e1e1e1;
+			    margin: 0 4px;
+			    display: inline-block} */
+.page-item.first{
+	background-position: 0 50%;
+	width: 16px;
+}
+.page-item.prev{
+	background-position: -16px 50%;
+}
+.page-item.next{
+	background-position: -26px 50%;
+}
+.page-item.last{
+	background-position: -38px 50%;
+}
+.pagination{display:block}

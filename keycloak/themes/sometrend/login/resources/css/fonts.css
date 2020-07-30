@@ -1,0 +1,33 @@
+/*
++----------------------------------------------------------------------+
+| Copyright (c) daumsoft.  co. Ltd
++----------------------------------------------------------------------+
+| 파일설명 : font style CSS
++----------------------------------------------------------------------+
+*/
+@charset "utf-8";
+
+/*==================================================================
+// web-font
+//=================================================================*/
+
+@font-face {
+ font-family: 'TmonTium';
+ font-weight: 400;
+ src: url('https://sometrend-res.some.co.kr/fonts/TmonFont/TmonMonsori.ttf.ttf');
+      url('https://sometrend-res.some.co.kr/fonts/TmonFont/TmonTium.ttf') format('ttf'),
+      url('https://sometrend-res.some.co.kr/fonts/TmonFont/TmonMonsori.otf.otf') format('otf');
+}
+
+
+/*
+
+	@font-face {
+	font-family: 'NotoM';
+	font-style: normal;
+	font-weight: 500;
+	src: url('https://sometrend-res.some.co.kr/fonts/NotoSans/NotoSansCJKkr-Medium.eot?#iefix') format('embedded-opentype'),
+		  url('https://sometrend-res.some.co.kr/fonts/NotoSans/NotoSansCJKkr-Medium.woff') format('woff'),
+		  url('https://sometrend-res.some.co.kr/fonts/NotoSans/NotoSansCJKkr-Medium.otf') format('otf');
+	}
+*/

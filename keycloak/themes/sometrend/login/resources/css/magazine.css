@@ -1,0 +1,72 @@
+/*
++----------------------------------------------------------------------+
+| Copyright (c) daumsoft.  co. Ltd
++----------------------------------------------------------------------+
+| page Style CSS
++----------------------------------------------------------------------+
+*/
+@charset "utf-8";
+
+
+
+/*==================================================================
+// trend_magazine
+// home
+//=================================================================*/
+
+/*==================================================================
+// gallery_list_wrap
+//=================================================================*/
+
+
+/* pre_board wrap */
+.pre_board_wrap{margin-top: 45px;}
+.pre_board_wrap .board_box{float: left; width: 50%;}
+
+.board_box{position: relative}
+.board_box span{display: inline-block;}
+.board_box .board_subj{font-size: 18px;color:#828282;vertical-align: top;padding-left: 20px;margin-right: 30px;position: relative;}
+.board_box .board_subj:before{content:'';width: 10px;height: 18px;display: block;position: absolute;left: 0;top: 50%; margin-top: -9px; background: url('https://sometrend-res.some.co.kr/images/icon_arrow.png');}
+.board_box .board_info_wrap{width: 70%;}
+.board_box .board_info_subj{font-size: 18px; color:#3e3e3e}
+.board_box .board_info_subj.no_board{color:#aaa; cursor: default; } /* no next */
+.board_box .board_info_subj.no_board:hover{text-decoration: none }
+
+.board_box .board_info_box{}
+.board_box .board_info_box span{position: relative;padding-right: 12px;margin-right: 12px;font-size: 13px;color:#8c8c8c;}
+.board_box .board_info_box span:after{content:'';position: absolute;top: 4px;bottom: 3px;right: 0;width: 1px;background-color:#c8c8c8;}
+.board_box .board_info_box span:last-of-type:after{display: none}
+.board_box .board_info_box .board_id_text{color:#545454}
+.board_box .board_info_box .board_emp_text{}
+.board_box .board_info_box .board_emp_text em{color: #f37b7b;}
+.board_box .board_info_box .board_read_text{font-size: 13px;}
+.board_box .board_info_box .board_read_text b{color: #545454;font-weight: normal;font-size: 13px;}
+.board_box .board_info_box .board_reply_text{}
+.board_box .board_info_box .board_reply_text b{font-weight: normal;color: #545454;}
+
+.next_board {text-align: right}
+.next_board .board_subj{padding-right: 20px;margin-left: 30px;margin-right: 0;padding-left: 0;}
+.next_board .board_subj:before{left: 60px;background-position: 10px;}
+.next_board .board_info_box span{padding-right: 0;margin-right: 0;padding-left: 12px;margin-left: 12px;}
+.next_board .board_info_box span:after{right: -13px;}
+.next_board:after{content:'';}
+
+.board_box:hover .board_subj{color:#444}
+.board_box:hover .board_info_subj{text-decoration: underline;}
+.board_box:hover .board_info_box span{}
+
+
+
+
+
+/*=========  animation =========*/
+@-webkit-keyframes gallery_slide {
+	0%{margin-left:0;}
+	50%{margin-left:60px;}
+	100%{margin-left:0;}
+}
+@keyframes gallery_slide{
+	0%{margin-left:0;}
+	50%{margin-left:60px;}
+	100%{margin-left:0;}
+}
