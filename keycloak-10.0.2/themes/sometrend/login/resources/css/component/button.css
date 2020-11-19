@@ -1,0 +1,26 @@
+/*
++----------------------------------------------------------------------+
+| Copyright (c) daumsoft.  co. Ltd
++----------------------------------------------------------------------+
+|  button style CSS 
++----------------------------------------------------------------------+
+*/
+@charset "utf-8";
+
+
+/*==================================================================
+// button
+//=================================================================*/
+.button {display: inline-block;min-width: 200px;height: 45px;line-height: 45px;text-align: center;padding: 0 20px;font-size: 18px;color: #fff;word-break: keep-all;border: 0;}
+.button_primary {background: #267fca; border: 1px solid #267fca}
+.button_secondary {background: #45495b; border: 1px solid #45495b}
+.button_secondary:hover{background: #3a3e51; border: 1px solid #3a3e51}
+.button_danger {background: #bd2828;border: 1px solid #bd2828;}
+.button_submit{background-color: #3a9cff; border: 1px solid #3a9cff}
+
+.button_default{background-color:#e7e7e7;color:#484848;border: 1px solid #e7e7e7;}
+.button_gray{background-color: #909090;color: #ffffff;border: 1px solid #e7e7e7;}
+
+.button_small {min-width: 68px;height: 25px;line-height: 25px;font-size: 13px;}
+.button_secondary2{border: 1px solid #818495;background: none;color: #45495b;font-size: 15px;border-radius: 5px;}
+.button_secondary2:hover{border: 1px solid #818495; background: #45495b; color: #fff;}

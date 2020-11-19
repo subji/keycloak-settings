@@ -1,0 +1,3 @@
+# 이게 service provider factory 세팅
+
+com.vaiv.statics.impl.UserStaticsServiceProviderFactoryImpl

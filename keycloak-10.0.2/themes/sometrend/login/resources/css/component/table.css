@@ -1,0 +1,91 @@
+/*
++----------------------------------------------------------------------+
+| Copyright (c) daumsoft.  co. Ltd
++----------------------------------------------------------------------+
+|  table style CSS 
++----------------------------------------------------------------------+
+*/
+
+
+/*==================================================================
+// table
+//=================================================================*/
+.table_wrap summary{font-family: 'NotoM', sans-serif;text-align: center;font-size: 22px;margin-top: 17px;margin-bottom: 15px; display: block}
+.relation_table{color:#555 ; text-align: left; }
+.relation_table th,.relation_table td {}
+.relation_table th{font-size: 15px;font-family: 'NotoM', sans-serif;border-top: 1px solid #707070;border-bottom:1px solid #707070;padding: 8px 5px;}
+.relation_table td{font-size: 15px;padding: 8px 5px;}
+.relation_table td:last-child{text-align: right; padding-right: 15px;}
+.relation_table .keywordText{display: inline-block;max-width: 100%;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+
+
+.relation_table .active {border: 2px solid #ff9161;}
+.relation_table .active td{color:#000}
+
+.sensitive_table{}
+.sensitive_table td{padding: 7px 5px;}
+.sensitive_table .keywordText{position: relative;max-width: 120px;}
+.sensitive_table .sensitive_label{display: inline-block;padding: 2px 9px;color:#fff;border-radius: 20px;font-size: 13px;border: 1px solid #fff;}
+.sensitive_table .positive_label{color: #5d9cec;border-color: #5d9cec;}
+.sensitive_table .negative_label{color: #ef6674;border-color: #ef6674;}
+
+
+/**/
+.sensitive_table .neutral_label {color: #7cbf4c;border-color: #7cbf4c;}
+
+.sensitive_table tbody::before{content: '';display: block;height: 9px;} /* thead tbody between spacing */
+
+
+.repute_table{}
+.repute_table td{font-size: 15px;padding: 5px 5px;}
+.repute_table td:last-child{text-align: right;padding-left: 0;padding-right: 15px;}
+.repute_table .keywordText{position: relative;max-width: 100%;}
+.repute_table .category{display: inline-block;padding: 3px 9px;color:#fff;border-radius: 20px;font-size: 12px;border: 1px solid #fff; word-break: keep-all;}
+.repute_table .category_1{border-color: #4b5058;color: #4b5058 }
+.repute_table .category_2{border-color: #ef6674; color: #ef6674 }
+.repute_table .category_3{border-color: #fe7d64; color: #fe7d64}
+.repute_table .category_4{border-color: #ffce55;color: #ffce55}
+.repute_table .category_5{border-color: #a0d468;color: #a0d468}
+.repute_table .category_6{border-color: #48cfae;color: #48cfae}
+.repute_table .category_7{border-color: #68bedc;color: #68bedc}
+.repute_table .category_8{border-color: #5d9cec;color: #5d9cec}
+.repute_table .category_9{border-color: #7a91f5;color: #7a91f5}
+.repute_table .category_10{border-color: #ac92ed;color: #ac92ed}
+.repute_table .category_11{border-color: #ec87bf;color: #ec87bf}
+.repute_table .category_12{border-color: #afafaf;color: #afafaf}
+
+
+/* top fixed Table */
+.table-box-wrap {position: relative;padding-top: 50px;height: 100%;}
+.table-box-wrap .table-box {height: calc(100% - 10px);overflow: auto;overflow-x: hidden;}
+.table-box-wrap .table-box table {width: 100%;border-spacing: 0;border-collapse: collapse;}
+.table-box-wrap .table-box table thead tr {position: absolute;top: 0;}
+.table-box-wrap .table-box table thead tr th {}
+.table-box-wrap .table-box table td {height: 38px;} /*border-top: 1px solid #ccc; */
+.table-box-wrap .table-box table tr {width: 100%;} /* table-layout: fixed; */
+.table-box-wrap .table-box table tbody tr {display: table-row;}
+
+
+/* form Table */
+.form-table{}
+.form-table > tbody > tr {}
+.form-table > tbody > tr > th {padding: 17px 10px;text-align: left;}
+.form-table > tbody > tr > td {padding: 17px 10px;}
+.form-table + .form-table {margin-top: 15px;}
+.form-table input[type='text']{width: 100%;padding: 10px;border: 1px solid #e9e9e9;}
+.form-table textarea{width: 100%;padding: 10px;border: 1px solid #e9e9e9;min-height: 250px;}
+
+
+/* board-table */
+.board-table {position: relative;}
+.board-table thead {border-top: 1px solid #161f32;}
+.board-table thead th {text-align: center;}
+.board-table tbody {border-top: 1px solid #cfcfcf;border-bottom: 1px solid #cfcfcf;}
+.board-table tbody tr {cursor: pointer;}
+.board-table tbody tr:hover {background: #f3fafc;}
+.board-table tbody th {text-align: left;}
+.board-table tr {border-bottom: 1px solid #eee;background: #fff;}
+.board-table tr:last-of-type {border-bottom-width: 0;}
+.board-table th,.board-table td {padding: 10px 20px; word-break: break-word}
+.board-table th a,.board-table td a {padding: 10px 0;}
+.board-table td {text-align: center;}

@@ -1,0 +1,36 @@
+/*
++----------------------------------------------------------------------+
+| Copyright (c) daumsoft.  co. Ltd
++----------------------------------------------------------------------+
+| floating style CSS
++----------------------------------------------------------------------+
+*/
+@charset "utf-8";
+
+
+/*==================================================================
+// floating
+//=================================================================*/
+
+.floating_btn {margin: auto;max-width: 1200px;left: 50%;right: 0;height: 0px;bottom: 0px;position: fixed; transform: translateX(-50%); width: 100%}
+.floating_btn .floating_inner {border-image: none;right: -80px;bottom: 20px;position: absolute; }
+.floating_btn .floating_inner::before {}
+.floating_btn .floating_btn_top {width: 45px;height: 46px;line-height: 52px;border: 1px solid #e6e6e6;background: #fff;border-radius: 50%;display: block;position: relative;text-align: center;z-index: 1;}
+.floating_btn .floating_btn_top span{color:#777777; font-size: 12px; position: relative;}
+.floating_btn .floating_btn_top span:before{content:'';position: absolute;left: 50%;top: -6px;width: 10px;margin-left: -4px;height: 5px;background: url('../../images/icon/etc/top_btn.png') 0 0;}
+
+.floating_btn .floating_btn_top:hover{border: 1px solid #a6c7f0;}
+.floating_btn .floating_btn_top:hover span{color:#2c8aff}
+.floating_btn .floating_btn_top:hover span:before{background-position: -21px -10px;}
+
+.floating_btn.stop {position: absolute;}
+.floating_btn.stop .floating_inner {}
+
+
+@media all and (max-width:1206px){
+	.floating_btn.stop .floating_inner {bottom: 100px;}
+}
+
+@media all and (max-width:1206px){
+	.floating_btn .floating_inner {right: 15px;bottom: 15px;position: fixed;z-index: 1000;}
+}

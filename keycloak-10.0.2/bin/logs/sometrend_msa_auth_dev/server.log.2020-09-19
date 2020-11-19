@@ -1,0 +1,4 @@
+2020-09-19 00:08:01,490 DEBUG [org.jboss.jca.core.connectionmanager.pool.idle.IdleRemover] (IdleRemover) Notifying pools, interval: 900000
+2020-09-19 00:08:01,538 DEBUG [org.jboss.jca.core.connectionmanager.pool.strategy.OnePool] (IdleRemover) KeycloakDS: removeIdleConnections(1600439881538) [0/20]
+2020-09-19 00:23:01,540 DEBUG [org.jboss.jca.core.connectionmanager.pool.idle.IdleRemover] (IdleRemover) Notifying pools, interval: 900000
+2020-09-19 00:23:01,540 DEBUG [org.jboss.jca.core.connectionmanager.pool.strategy.OnePool] (IdleRemover) KeycloakDS: removeIdleConnections(1600440781540) [0/20]

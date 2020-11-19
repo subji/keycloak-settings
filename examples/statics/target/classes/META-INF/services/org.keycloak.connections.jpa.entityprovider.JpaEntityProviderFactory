@@ -1,0 +1,5 @@
+# 이게 entity provider factory 세팅
+# jpa 객체 만들어주는 거
+
+
+com.vaiv.statics.jpa.UserStaticsJpaEntityProviderFactory

@@ -1,0 +1,59 @@
+/*
++----------------------------------------------------------------------+
+| Copyright (c) daumsoft.  co. Ltd
++----------------------------------------------------------------------+
+| 파일설명 : font style CSS
++----------------------------------------------------------------------+
+*/
+@charset "utf-8";
+
+/*==================================================================
+// web-font
+//=================================================================*/
+
+@font-face {
+ font-family: 'Sora';
+ font-weight: 100;
+ src: url('ttf/Sora-Thin.ttf'),
+      url('ttf/Sora-Thin.ttf') format('ttf'),
+      url('otf/Sora-Thin.ttf') format('otf');
+}
+
+@font-face {
+ font-family: 'Sora';
+ font-weight: 200;
+ src: url('ttf/Sora-Light.ttf'),
+      url('ttf/Sora-Light.ttf') format('ttf'),
+      url('otf/Sora-Light.ttf') format('otf');
+}
+
+
+@font-face {
+ font-family: 'Sora';
+ font-weight: 400;
+ src: url('ttf/Sora-Regular.ttf'),
+      url('ttf/Sora-Regular.ttf') format('ttf'),
+      url('otf/Sora-Regular.ttf') format('otf');
+}
+@font-face {
+ font-family: 'Sora';
+ font-weight: 500;
+ src: url('ttf/Sora-SemiBold.ttf'),
+      url('ttf/Sora-SemiBold.ttf') format('ttf'),
+      url('otf/Sora-SemiBold.ttf') format('otf');
+}
+@font-face {
+ font-family: 'Sora';
+ font-weight: 600;
+ src: url('ttf/Sora-Bold.ttf'),
+      url('ttf/Sora-Bold.ttf') format('ttf'),
+      url('otf/Sora-Bold.ttf') format('otf');
+}
+
+@font-face {
+ font-family: 'Sora';
+ font-weight: 700;
+ src: url('ttf/Sora-ExtraBold.ttf'),
+      url('ttf/Sora-ExtraBold.ttf') format('ttf'),
+      url('otf/Sora-ExtraBold.ttf') format('otf');
+}

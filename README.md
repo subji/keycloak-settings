@@ -70,6 +70,18 @@ keycloak 어드민 설정
 view-users : 이건 유저에 대한 정보 조회
 manage-users : 이건 유저에 대한 모든 동작?
 
+## Module 추가, 실행 명령어
+---
+- Module 추가 
+```
+sh /mnt/d/subji/msa/msa-keycloak/keycloak-10.0.2/bin/jboss-cli.sh --command="module add --name={com.test.module.module-name} --resources={module .jar path} --dependencies=org.keycloak.keycloak-core,org.keycloak.keycloak-services,org.keycloak.keycloak-model-jpa,org.keycloak.keycloak-server-spi,org.keycloak.keycloak-server-spi-private,javax.ws.rs.api,javax.persistence.api,org.hibernate,org.javassist,org.liquibase"
+```
+
+- 실행 명령어 (DB 및 로그 파일 위치 지정)
+```
+./bin/standalone.sh -Dkeycloak.profile.feature.account_api=enabled -Ddb.url="jdbc:mariadb://{db host}/{db name}?characterEncoding=UTF-8" -Ddb.user={db user} -Ddb.password={db password} -Dlogging.path={logging path not include '.log' file} -Dhandler.FILE.fileName={logging file name (with full path)} -b 0.0.0.0 &
+```
+
 ## 한국어 설정
 --- 
 themes/bases/{각폴더}/messages/properties 로 관리(ja 거 복사)

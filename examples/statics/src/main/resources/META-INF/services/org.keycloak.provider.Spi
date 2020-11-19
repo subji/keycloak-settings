@@ -1,0 +1,3 @@
+#이게 커스텀한 jpa 객체 keycloak에 임포트 시켜주는거?
+
+org.keycloak.examples.domainextension.spi.ExampleSpi

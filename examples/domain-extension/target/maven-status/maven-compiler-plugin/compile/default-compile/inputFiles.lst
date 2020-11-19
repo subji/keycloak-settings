@@ -1,0 +1,15 @@
+/mnt/d/subji/msa/msa-keycloak/custom-spi-source/domain-extension/src/main/java/org/keycloak/examples/domainextension/jpa/ExampleJpaEntityProvider.java
+/mnt/d/subji/msa/msa-keycloak/custom-spi-source/domain-extension/src/main/java/org/keycloak/examples/domainextension/jpa/ExampleJpaEntityProviderFactory.java
+/mnt/d/subji/msa/msa-keycloak/custom-spi-source/domain-extension/src/main/java/org/keycloak/examples/domainextension/jpa/MemberStatistics.java
+/mnt/d/subji/msa/msa-keycloak/custom-spi-source/domain-extension/src/main/java/org/keycloak/examples/domainextension/rest/ExampleRestResource.java
+/mnt/d/subji/msa/msa-keycloak/custom-spi-source/domain-extension/src/main/java/org/keycloak/examples/domainextension/spi/ExampleService.java
+/mnt/d/subji/msa/msa-keycloak/custom-spi-source/domain-extension/src/main/java/org/keycloak/examples/domainextension/CompanyRepresentation.java
+/mnt/d/subji/msa/msa-keycloak/custom-spi-source/domain-extension/src/main/java/org/keycloak/examples/domainextension/rest/CompanyResource.java
+/mnt/d/subji/msa/msa-keycloak/custom-spi-source/domain-extension/src/main/java/org/keycloak/examples/domainextension/rest/ExampleRealmResourceProviderFactory.java
+/mnt/d/subji/msa/msa-keycloak/custom-spi-source/domain-extension/src/main/java/org/keycloak/examples/domainextension/spi/impl/ExampleServiceImpl.java
+/mnt/d/subji/msa/msa-keycloak/custom-spi-source/domain-extension/src/main/java/org/keycloak/examples/domainextension/spi/impl/ExampleServiceProviderFactoryImpl.java
+/mnt/d/subji/msa/msa-keycloak/custom-spi-source/domain-extension/src/main/java/org/keycloak/examples/domainextension/jpa/Company.java
+/mnt/d/subji/msa/msa-keycloak/custom-spi-source/domain-extension/src/main/java/org/keycloak/examples/domainextension/spi/ExampleSpi.java
+/mnt/d/subji/msa/msa-keycloak/custom-spi-source/domain-extension/src/main/java/org/keycloak/examples/domainextension/spi/ExampleServiceProviderFactory.java
+/mnt/d/subji/msa/msa-keycloak/custom-spi-source/domain-extension/src/main/java/org/keycloak/examples/domainextension/MemberStatisticsDTO.java
+/mnt/d/subji/msa/msa-keycloak/custom-spi-source/domain-extension/src/main/java/org/keycloak/examples/domainextension/rest/ExampleRealmResourceProvider.java

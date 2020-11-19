@@ -1,0 +1,13 @@
+com\vaiv\statics\rest\UserStaticsRestController.class
+com\vaiv\statics\jpa\UserStaticsJpaEntityProviderFactory.class
+com\vaiv\statics\rest\UserStaticsRealmResourceProvider.class
+com\vaiv\statics\spi\impl\UserStaticsServiceProviderFactoryImpl.class
+com\vaiv\statics\spi\UserStaticsSpi.class
+com\vaiv\statics\rest\UserStaticsResource.class
+com\vaiv\statics\spi\impl\UserStaticsServiceImpl.class
+com\vaiv\statics\spi\UserStaticsService.class
+com\vaiv\statics\jpa\UserStaticsJpaEntityProvider.class
+com\vaiv\statics\spi\UserStaticsServiceProviderFactory.class
+com\vaiv\statics\rest\UserStaticsRealmResourceProviderFactory.class
+com\vaiv\statics\UserStaticsRepresentation.class
+com\vaiv\statics\jpa\UserStatics.class

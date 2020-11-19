@@ -1,0 +1,329 @@
+/*
++----------------------------------------------------------------------+
+| Copyright (c) daumsoft.  co. Ltd
++----------------------------------------------------------------------+
+|  login style CSS
++----------------------------------------------------------------------+
+*/
+@charset "utf-8";
+
+
+/*==================================================================
+// reset
+//=================================================================*/
+html, body{background-color: #f8fcff;}
+
+footer{background-color: transparent;color: #555555;border-top: 1px solid #f0f0f0}
+footer *{color:inherit}
+footer .IE_text{color:inherit}
+
+input[type='password']{
+    padding-right: 35px !important;
+    
+}
+input, select{outline: none}
+.form_password_box{position:relative; height: inherit;}
+.password_icon{width: 40px;height: 33px;display: inline-block;background: url('../../images/icon/form/icon_password.png') no-repeat 50%;position: absolute;top: 50%;right: 6px;margin-top: -17px;cursor: pointer;}
+
+/*==================================================================
+// login
+//=================================================================*/
+.login_Wrap{overflow: hidden; margin-bottom: 100px;}
+.login_Wrap .login_section_wrap{max-width: 740px}
+.logout_text{max-width: 755px;background-color: #45495b;position: absolute;left: 50%;top: 17%;transform: translateX(-50%);padding: 10px;}
+.logout_text img, .logout_text span{display: inline-block; vertical-align: middle}
+.logout_text img{width: 20px}
+.logout_text span{color: #fff; margin-left: 5px}
+.login_section_wrap{max-width: 642px;padding: 40px 35px 35px;background-color:#fff;margin: 200px auto 0;border: 1px solid #e9eff4;position: relative;}
+
+.logo_img{position: absolute;left: 50%;top: -63px;margin-left: -72px;}
+
+
+.login_text_box, .login_form_box{float: left;min-height: 300px;}
+
+/* login_text_box */
+.login_text_box{padding-right: 32px;width: 220px;}
+.mainText_box{margin-top: 35px}
+.mainText_box .mainText{font-size: 25px;line-height: 125%;letter-spacing: -1px;font-family: 'NotoL',sans-serif;color: #7c7c7c;}
+.mainText_box .mainText span{font-family: 'NotoR', sans-serif;color: #333;}
+.login_logo{margin-top: 21px;}
+.login_logo a{float: left;}
+.login_logo a, .logo_img{display: block;margin-top: 20px;margin-right: 48px;height: 44px;width: 144px;background: url('../../images/layout/header/header_logo_1.svg') no-repeat 0 0;font-size: 0;text-indent: -9999px;}
+
+.mainInfo_box{font-size: 12px;color:#494949;margin-top: 77px;}
+.mainInfo_box b{display: inline-block; margin-right: 7px; padding-right: 7px; position: relative;}
+.mainInfo_box b:after{content:'';position: absolute;top: 3px;bottom: 3px;right: 0;width: 1px;background-color: #d9d9d9;}
+
+/* login_form_box */
+.login_form_box{padding-left: 45px;border-left: 1px solid #e9eff4;width: 440px;}
+.login_frm{}
+.login_frm .form_control{border-bottom: 1px solid #e9eff4;margin-bottom: 9px;position: relative;}
+.login_frm .input_text{border: 0;padding: 0 3px;width: 100%;height: 41px;font-size: 15px;font-family: 'NotoL',sans-serif; line-height: 165%;}
+.login_frm .input_text::placeholder {color:#e1e1e1}
+
+/* */
+.loginCheckbox {color:#000}
+.loginCheckbox input[type="checkbox"]{ display: none; }
+.loginCheckbox label {position: relative;padding-left: 20px;color: #494949;font-size: 14px;line-height: 100%;}
+.loginCheckbox label:before, .loginCheckbox label:after {content: " ";display: inline-block;position: absolute;width: 12px;height: 12px;line-height: 12px;left: 0;cursor: pointer;top: 50%;margin-top: -7px;border: 1px solid #b7b7b7;background-color:#fff;-webkit-transition: opacity 0.3s linear;-moz-transition: opacity 0.3s linear;-o-transition: opacity 0.3s linear;-ms-transition: opacity 0.3s linear;transition: opacity 0.3s linear;}
+.loginCheckbox input[type="checkbox"]:checked+label::after {font-family: 'Material-Design-Iconic-Font';content: "\f26b";text-align: center;font-size: 13px;color: #fff;background-image: none;border: 1px solid #359aff;background-color: #359aff;}
+
+/* id, pw find  */
+.find_box{font-size: 0;text-align: center;margin-top: 12px;}
+.find_box .find_btn{display: inline-block;font-size: 14px;color: #494949;position: relative;}
+
+.find_box .find_btn.find_btn_pw{margin-left: 12px;padding-left: 11px;}
+.find_box .find_btn.find_btn_pw:before{content:'';position: absolute;left: 0px;top: 3px;width:1px;height: 13px;background-color:#b7b7b7;}
+
+.error_text{color:#ec0000; margin: 5px 0;}
+.error_text .icon{display: inline-block; margin-right: 10px;}
+.error_login{}
+.error_id_find{}
+.error_pw_find{}
+.error_join{}
+.must_text{color:#ec0000; font-family: 'NotoR',sans-serif;}
+
+/* login btn */
+.login_btn_box{margin-top: 22px;}
+.login_btn_box .login_btn{display: block;height: 48px;line-height: 46px;text-align: center;color:#fff;font-size: 18px;border-radius: 100px;font-family: 'NotoM',sans-serif;background-color:#359aff; cursor: pointer;}
+
+/* SNS btn */
+.social_wrap{margin-top: 0px;}
+.social_wrap .social_title{text-align:center;border-bottom: 1px solid rgba(163, 180, 192, 0.5);height: 16px;color: #9c9c9c;position: relative;}
+.social_wrap .social_title span{padding: 0 9px 0px 23px;font-size: 18px;position: absolute;left: 50%;top: 50%;transform: translate(-50%,-15%);background-color:#fff;color:#000}
+.social_btn_box{margin-top: 32px;text-align: center;}
+.social_btn_box .social_btn{display: inline-block;position: relative;height: 33px;line-height: 32px;font-size: 14px;padding-left: 43px;padding-right: 21px;color:#999;border: 1px solid #e8e8e8;text-align: left;}
+.social_btn_box .naver_btn{} 
+.social_btn_box .google_btn{}
+
+.social_btn_box .social_btn:before{content:'';position: absolute;left: 13px;top: 50%; margin-top: -10px; width: 20px;height: 20px;}
+.social_btn_box .naver_btn:before{background: url('../../images/login/icon_naver2.svg') no-repeat  0 0%;}
+.social_btn_box .google_btn:before{background: url('../../images/login/icon_google2.svg') no-repeat 0px 0%;}
+
+/* join btn */
+.join_btn_box{ margin-top: 22px}
+.join_btn_box .join_btn{ display: block;height: 60px; line-height: 60px; text-align: center; color:#fff; font-size: 18px; font-family: 'NotoM',sans-serif; background-color:#9c9c9c}
+
+.default_btn{display: inline-block;width: 190px;height: 39px;line-height: 35px;text-align: center;color:#fff;font-size: 16px;font-family: 'NotoM',sans-serif;background-color:#359aff;border: 2px solid #359aff;border-radius: 100px; margin: 0 6px;}
+
+.default_btn.cancle_btn{color: #359aff;border: 1px solid #359aff;background-color:#fff;margin: 0} 
+
+/* bottom text */
+.login_info_text{font-size: 13px;color:#a8b5c0;text-align: center;margin-top: 15px;letter-spacing: -0.5px;}
+
+/*==================================================================
+// find  ID // PW
+//=================================================================*/
+.find_wrap{padding: 0 35px}
+
+.findTabArea{}
+.findTabArea li{font-size: 20px;color:#9c9c9c;margin-right: 17px;padding-right: 17px;position:relative;font-family: 'NotoR',sans-serif;}
+.findTabArea li:first-child:after{content:'';position: absolute;top: 3px;bottom: 3px;right: 0;width: 2px;background-color:#777;}
+.findTabArea li a{}
+.findTabArea li.on{color: #232323;}
+
+.findTab_con{margin-top: 20px;}
+.form_desc{color:#737373;font-size:  14px;font-family:'NotoR', sans-serif;margin-top: 35px;}
+.form_subject{color:#232323;font-size:  14px;margin-bottom: 7px;font-family:'NotoR', sans-serif;margin-top: 35px;}
+.form_subject .place_text{color:#44709b; font-size: 12px;}
+.find_frm{display: block;}
+.find_frm .radio_open{margin-top: 16px;}
+.find_frm .radio_open label{font-size: 15px;}
+.find_frm .radio_open input[type='radio'] + label + .form_box{display: none;}
+.find_frm .radio_open input[type='radio']:checked + label + .form_box{display: block;}
+.find_frm .form_subject{margin-top: 24px;}
+.find_frm .form_control{border-bottom: 1px solid #ebebeb;margin-bottom: 8px;font-size: 0;position: relative;margin-left: 26px;}
+.find_frm .form_control + .form_control{}
+.find_frm .form_control.form_control_type2{margin-right: 120px;}
+.find_frm .form_control.form_control_type3{margin-left: 0px;}
+.find_frm .input_text{border: 0;padding: 0 5px;width: 100%;height: 33px;line-height: 165%; font-size: 14px;font-family: 'NotoL',sans-serif;}
+.find_frm .input_text::placeholder {color:#adadad}
+.find_frm .password_info_text{color:#e1e1e1; font-size: 12px; position: absolute; left: 17px; top: 40px}
+
+.findTab_con .comfirm_input{width: 458px;display: inline-block; position: relative; }
+.findTab_con .comfirm_btn{display: inline-block;color: #232323;vertical-align: top;font-size: 15px;line-height: 15px;text-align: center;width: 134px;padding: 9px 0;border: 1px solid #adadad;border-radius: 100px;position: absolute;right: -160px;bottom: 0; background-color:#fff}
+.findTab_con .comfirm_btn:hover{background-color:#adadad; color:#fff}
+.findTab_con .comfirm_finish_btn{background-color:#adadad; color:#fff; cursor: default;}
+
+.find_frm .password_info.placeholder_txt{
+    background-image: url('../../images/login_find_pw_bg.png'); background-repeat: no-repeat; background-position: 19px 14px
+}
+.find_frm .comfirm_text{color: #adadad; margin-left: 26px; font-size: 11px;}
+
+
+.find_frm .nickname_text{color: #777;position: relative;top: 0px; font-size: 13px; cursor:pointer}
+.default_btn.findpassword{margin: 0 0 !important;}
+
+
+/* change_pw_list */
+.change_pw_list{margin-bottom: 40px;}
+.change_pw_list li{color: #737373; font-size :12px; line-height: 1.4; margin: 7px 0; padding-left: 7px; position: relative;}
+.change_pw_list li:before{content:'';position: absolute;top: 6px;left: 0;width: 2px;height: 2px;background-color: #737373;}
+
+
+/* help_text_box */
+.help_text_box{color: #adadad ; margin-top :17px;}
+.help_text_box a{color: #359aff;}
+.help_text_box .zmdi{font-size: 20px; color: #c9c9c9; vertical-align: middle; margin-right: 5px;}
+
+/* find_menu_box */
+.find_menu_box{text-align: center; margin-top: 16px}
+.find_menu_box .find_menu{display: inline-block; font-size: 12px; color: #6f6f6f; padding-right: 10px; margin-right :10px; position: relative}
+.find_menu_box .find_menu:after{content:'';position: absolute;top: 2px;bottom: 2px;right:0;width: 1px;background-color: #9b9c9d;}
+.find_menu_box .find_menu:last-child{padding-right: 0; margin-right: 0;}
+.find_menu_box .find_menu:last-child:after{display: none}
+
+
+/* find_info_wrap */
+.find_info_wrap{text-align: center; padding: 20px 0 65px;}
+.find_info_wrap p{font-size: 16px; color: #232323; line-height: 1.78; margin: 40px auto;}
+.find_info_wrap p .point_color{color: #359aff; font-family: 'NotoM',sans-serif; }
+.find_info_wrap .default_btn_box{}
+.find_wrap .default_btn_box{text-align: center;}
+
+
+.is-certificated-complete h6.sub_heading{font-size: 14px;color: #565969;margin-top: 5px;}
+.is-certificated-complete h6.sub_heading span{font-family: 'NotoDL' ,sans-serif;font-size: 12px;color: #b7b7b7;}
+em.essential{font-weight: bold;color: #359aff;display: inline-block;}
+.is-certificated-complete button.phone_btn{width: 78%;padding: 10px 0;font-family: 'NotoR',sans-serif;background: none;border: 1px solid #359aff;color: #359aff;border-radius: 5px;margin: 15px 0;}
+.is-certificated-complete button.phone_btn:hover{background:#359aff; color:white}
+.is-certificated-complete p.sub_desc{font-size: 11px;font-family: 'NotoL',sans-serif;color: #555;margin-top: 5px;}
+
+.is-certificated-complete .form_box{padding-left: 24px;}
+/*==================================================================
+// join
+//=================================================================*/
+.join_section_wrap{margin-top: 70px}
+.join_wrap{padding: 0 35px}
+
+.join_frm{}
+.join_title{font-size: 20px;color:#232323;position:relative;font-family: 'NotoR',sans-serif; }
+.join_frm .form_contents{position :relative;border-bottom: 1px solid #ebebeb;}
+
+.join_frm .form_control{margin-bottom: 8px;font-size: 0;position: relative;}
+.join_frm .form_control + .form_control{}
+.join_frm .input_text{border: 0;padding: 0 5px;width: 100%;height: 33px;line-height: 165%; font-size: 14px;font-family: 'NotoL',sans-serif; background-color:#fff}
+.join_frm .input_text::placeholder {color:#adadad}
+.join_frm .sns_info_text {color: #e1e1e1;font-size: 12px;position: absolute;left: 74px;top: 14px;}
+.join_frm .sns_info_text:nth-child(2n){top: 30px;}
+
+.join_frm .comfirm_input{width: 288px;display: inline-block;}
+.join_frm .comfirm_btn{display: inline-block;color: #232323;vertical-align: top;font-size: 15px;line-height: 15px;text-align: center;width: 114px;padding: 9px 0;border: 1px solid #adadad;border-radius: 100px;position: absolute;right: -160px;bottom: 0;}
+.join_frm .comfirm_btn:hover{background-color:#adadad; color:#fff}
+.join_frm .comfirm_finish_btn{background-color:#adadad; color:#fff; cursor: default;}
+
+.comfirm_min{position: absolute;bottom: 5px;right: 11px;font-size: 12px;color: #ec0000;}
+
+
+.join_frm .comfirm_code{width: 335px;}
+.join_frm .comfirm_code_btn{width: 128px;}
+
+.form_email{margin-bottom: 8px; font-size: 0}
+.form_email .email_input{display: inline-block;width: 150px;font-size: 18px;}
+.form_email .email_input.first{width: 240px;}
+.form_email .email_at_text{display: inline-block;font-size: 18px;color:#555;margin: 0 15px;}
+.form_email .select{position: relative;}
+.form_email .select:after{}
+.form_email .select select{border: 1px solid #ffffff;color:#555;width: 100%;height: 40px;padding: 0 20px;font-size: 14px;}
+
+
+.join_frm .agree_list{border: 1px solid #ebebeb;margin-top: 35px;border-radius: 3px;background-color:#f9fafc;padding: 25px 40px;}
+.join_frm .agree_list .agree_title{border-bottom: 1px solid #ebebeb;font-size: 18px;color:#555555; padding: 10px 0 15px; line-height: 18px;}
+.join_frm .agree_list li{margin: 15px 0px; position: relative;}
+.join_frm .agree_list li .view_arrow{display: inline-block; position: absolute; right: 0; top: 50%; margin-top:-5px;  width: 6px; height: 10px; background: url('../../images/login/icon_join_arrow.png') no-repeat; cursor:pointer}
+.join_frm .agree_list li .view_arrow.on{transform: rotate(90deg);right: 5px;}
+
+.join_frm .agree_list .loginCheckbox label{padding-left: 30px;}
+
+
+.join_frm .join_btn_box{text-align: center;}
+.join_frm .join_btn_box .join_btn{ float: left;display: block;width: 196px; height: 60px; line-height: 60px; font-size: 18px; color:#fff;}
+.join_frm .join_btn_box .cancle_btn{color: #359aff;border: 1px solid #359aff;background-color:#fff;} 
+
+.join_frm .input_text.placeholder_txt{background: url('../../images/login_join_nick_bg.png') no-repeat 19px 50%}
+
+
+.join_frm .accodian_box{background-color: #ffffff;padding: 10px 20px;border-top: 1px solid #ebebeb;border-bottom: 1px solid #f7f7f7;color: #666;font-size: 12px;height: 200px;overflow: auto;display: none;}
+.join_frm .accodian_box.on{display: block}
+
+
+
+#select-box-arrow {text-indent: -9999px;display: inline-block;width: 20px;height: 20px;position: absolute;top: 5px;right: 5px;z-index: 1;cursor: pointer;border-radius: 50%;}
+#select-box-arrow:after{content:'';width:0px;height:0px;border-left:5px solid transparent;border-right:5px solid transparent;border-top:5px solid #555;position: absolute;left: 50%;top: 50%;margin: -2px 0 0 -5px;}
+#select-box-arrow.on:after{
+	width:0px;
+	height:0px;
+	border-top: 0;
+	border-left:5px solid transparent;
+	border-right:5px solid transparent;
+	border-bottom:5px solid #555;
+}
+
+#select-box-arrow:hover{background-color: #ebebeb;}
+
+#select-box-area{position: absolute;z-index : 9999;display: none;left: 0;right: -20px;top: 33px;font-size: 15px;border: 1px solid #eee;background-color: #fff;}
+.select-box-option{padding: 5px; cursor:pointer}
+.select-box-option:hover{background-color: #e9eff4;}
+
+
+/* survey_area */
+.join_frm .form_survey{width: 100%}
+.survey_area{font-size: 14px;}
+
+.survey_area .radioCustom{margin: 13px 0;font-size: 0;}
+.survey_area .radioCustom li{display: inline-block;margin-right: 17px;}
+.survey_area .radioCustom li:last-child{margin-right: 0}
+.survey_area .radio_open label{font-size: 14px;line-height: 25px;vertical-align: middle;}
+.survey_area .radio_open input[type="radio"]+label:after{top: 8px;left: 5px;width: 7px;height: 7px;border: 0;opacity: 1;background-color: #cfcfcf;}
+.survey_area .radio_open input[type="radio"]:checked+label::after{background-color: #3a9cff}
+
+.survey_area .radioCustom li .text_box{display: inline-block;vertical-align: middle;height: 30px;line-height: 30px;padding: 0;margin-left: 10px;width: 543px;border: 0;border-bottom: 1px solid #cfcfcf;padding: 0 10px;}
+
+/*==================================================================
+// terms reset
+//=================================================================*/
+.tit_subject.fst{padding-top: 0; font-size: 14px;}
+.tit_subject{padding-top: 20px;font-size: 14px;}
+.tit_subject + .desc_g, .subject_desc_g{font-size: 13px; padding-top: 10px;}
+
+.list_1depth li{padding-top: 5px;line-height: 130%;}
+.list_2depth_type2 li{font-size: 12px}
+
+.tbl td {line-height: 120%}
+.tbl_terms .inner_cell{font-size:12px; padding: 12px 10px;}
+
+
+
+/*==================================================================
+// SNS connect
+//=================================================================*/
+
+.SNS_frm{}
+.SNS_frm .form_control{border: 1px solid #e1e1e1;margin-bottom: 8px;font-size: 0; position: relative;}
+.SNS_frm .input_text{border: 0;padding: 0 17px;width: 100%;height: 58px; font-size: 18px; font-family: 'NotoL',sans-serif}
+.SNS_frm .input_text::placeholder {color:#e1e1e1}
+.SNS_frm .sns_info_text{color:#e1e1e1; font-size: 12px; position: absolute; left: 17px; top: 40px}
+
+.SNS_frm .comfirm_input{width: 288px;display: inline-block; position: relative;}
+.SNS_frm .comfirm_btn{display: inline-block;background-color:#f7f7f7;color:#555;height: 58px;line-height: 58px;vertical-align: top;font-size: 18px;text-align: center;width: 110px;border-left: 1px solid #e1e1e1;}
+.SNS_frm  .confirm_text{color:#555}
+
+.SNS_frm .agree_list{border: 1px solid #e1e1e1}
+.SNS_frm .agree_list .agree_title{border-bottom: 1px solid #e1e1e1; font-size: 18px; color:#555555; text-align: center;  padding: 20px 0 }
+.SNS_frm .agree_list li{margin: 18px 0 18px 16px;}
+
+.SNS_frm .connet_nick{}
+.SNS_frm .connet_nick.placeholder_txt{background: url('../../images/login_connet_nick_bg.png') no-repeat 19px 50%;}
+
+/*==================================================================
+// Join complete
+//=================================================================*/
+
+.complete_wrap{text-align: center;}
+.complete_wrap .complete_img{margin-top: 136px;}
+.complete_wrap .complete_img img{}
+.complete_wrap .logo_img{position: relative;top:0;margin: 0 auto;left: auto;}
+.complete_wrap .complete_title{margin-top: 42px; font-size: 27px;}
+.complete_text{line-height: 1.54;font-size: 14px;color: #232323;}
+.complete_text .point_color{color: #359aff; font-family: 'NotoM',sans-serif}
+.complete_btn_box{ margin-top: 30px}

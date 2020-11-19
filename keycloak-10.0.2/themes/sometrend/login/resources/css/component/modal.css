@@ -1,0 +1,104 @@
+/*
++----------------------------------------------------------------------+
+| Copyright (c) daumsoft.  co. Ltd
++----------------------------------------------------------------------+
+|  modal style CSS 
++----------------------------------------------------------------------+
+*/
+@charset "utf-8";
+
+
+
+/*==================================================================
+// modal
+//=================================================================*/
+/* pop up layout  */
+.poplayout{ display:none;} 
+.pop_size_01{width: 600px}
+.pop_size_02{width: 300px}
+
+
+.pop_type01 .modal_inner{max-width: 320px}
+.pop_type02 .modal_inner{max-width: 500px}
+.pop_type03 .modal_inner{max-width: 650px}
+.pop_type04 .modal_inner{max-width: 1000px}
+
+.modal_outer {overflow-x: hidden;overflow-y: scroll;position: fixed;top: 0;left: 0;right: 0;bottom: 0;background: rgba(63, 69, 75, 0.8);font-size: 0;text-align: center;white-space: nowrap;z-index: 999;}
+.modal_outer:before {content: '';display: inline-block;height: 100%;vertical-align: middle;}
+
+.modal_inner {display: inline-block;position: relative;width: 100%;max-width: 1000px;max-height: 600px;overflow-y: auto; padding: 30px;background: #fff;text-align: left;vertical-align: middle;white-space: normal;}
+.modal_inner:before {}
+
+.modal_body {font-size: 14px;color: #666;padding: 20px 10px 0}
+.modal_top{padding-bottom: 10px;margin-bottom: 20px;border-bottom: 1px solid #f4f4f4;}
+.modal_heading{font-size: 21px; color: #303030; margin-bottom: 30px; padding-bottom: 10px;margin-bottom: 5px;font-family: 'NotoM' ,sans-serif;}
+.modal_heading1 {padding: 1px 0 9px;border-bottom: 1px solid #000;color: #333;letter-spacing: -1px;}
+.modal__box + .modal_heading1 {margin-top: 21px;}
+
+/* .modal_footer {position: relative;padding: 20px 0;} */
+.modal_footer {text-align: center; margin-top: 30px;}
+.modal_footer a[role="button"]{font-size: 12px;}
+.modal_footer a.pop_btn{display: inline-block;width: 170px;height: 45px;line-height: 45px;background-color: #f7f7f7;font-size: 15px;color: #555;border-radius: 7px;margin: 0 3px;}
+.modal_footer a.confirm_btn{background-color: #359aff; color: #fff}
+
+.modal_footer > .pagination__list {margin: -15px 0;}
+.modal_button_close {position: absolute;top: 18px;right: 10px;width: 30px;height: 30px;text-align: center;line-height: 30px;border-radius: 50%;color: #666;background-color: #fff;border: 0;font-size: 23px;z-index:1;}
+.modal_button_close:after {}
+
+
+
+
+
+.layerMaskBackground{background-color:#000;opacity: 0.0;visibility: hidden;position: fixed;left: 0;right: 0;top: 0;bottom: 0;z-index: 99;}
+.layerMaskBackground.on{opacity: 0.5; visibility: visible}
+/* 2020.01.31.TOBEDELETE */
+.layerMaskBackground-temp{background-color:#000;opacity: 0.0;visibility: hidden;position: fixed;left: 0;right: 0;top: 0;bottom: 0;z-index: 9;}
+.layerMaskBackground-temp.on{opacity: 0.5; visibility: visible}
+
+
+.confirmPop{position: fixed;left: 50%;top: 50%;width: 320px;min-height: 118px;margin-top: -95px;padding: 14px 0;margin-left:-150px;background-color:#fff;text-align: center;z-index:1000000;box-shadow: 1px 1px 15px 5px #00000021;border-radius: 3px;overflow: hidden;}
+.confirmPop_button_close{position: absolute;top: 11px;right: 10px;color: #555;border: 0;background: none; font-size: 16px; z-index:1}
+.confirmPop .confirmPop_text{font-size: 14px;color:#555;height: 77px;}
+.confirmPop .confirmPop_text span{position: relative;top: 50%;display: inline-block;transform: translateY(-50%); word-break: keep-all;}
+
+.confirmPop .confirmPop_text span .sub_txt{font-size: 11px;line-height: 1.4;display: inline-block;color: #8c9aa8;}
+
+.confirmPop .confirm_button_box{}
+.confirmPop .confirm_button_box.box_type1{}
+.confirmPop .confirm_button_box.box_type2{}
+
+.confirmPop .confirm_button_box .confirm_button{font-size: 14px;color: #555;display: inline-block;background-color: #f7f7f7;min-width: 110px;height: 33px;line-height: 33px;border-radius: 5px;vertical-align: middle;}
+.confirmPop .confirm_button_box .confirm_button.ok_btn{background-color:#3c95ee;color: #fff;}
+.confirmPop .confirm_button_box.box_type1 .confirm_button{}
+.confirmPop .confirm_button_box.box_type2 .confirm_button{padding: 0 11px; margin: 0 4px;}
+
+/* double click - loading popup */
+.watingPop{position: fixed;left: 50%;top: 50%;width: 300px;height: 170px;margin-top: -95px;margin-left:-150px;background-color:#fff;text-align: center;z-index:100;border: 1px solid #e4e4e4; border-radius: 8px;}
+.watingPop .watingPop_text{font-size: 14px;color:#555;margin: 88px auto 30px;}
+.watingPop .watingPop_text span{display: inline-block;}
+.watingPop .watingPop_button_box .watingPop_button{font-size: 14px;color:#fff;display: inline-block;padding: 3px 10px;background-color:#afafaf;}
+
+
+
+.chromePop{position: fixed;left: 50%;top: 50%;z-index: 9; width: 400px; margin-left: -200px; margin-top: -290px}
+
+.chromePop .openPop_inner{background-color: #fff;border: 1px solid #cfcfcf;box-shadow: 4px 6px 10px rgba(0,0,0,0.05);}
+.chromePop .imgae_area{border-radius: 10px 10px 0 0;text-align: center; max-width: 400px;}
+.chromePop .imgae_area img{max-width: 100%;}
+.chromePop .imgae_area .detail_btn{display: inline-block; min-width: 80px; padding: 3px 18px; background-color: #4b9fff; color: #fff; border-radius: 100px; text-align: center; margin: 0 auto;}
+
+.chromePop .textarea_area{overflow: hidden;height: auto;line-height: 30px;padding: 0px 10px; text-align: center;}
+.chromePop .textarea_area .checkbox{}
+.chromePop .checkbox label:before, .chromePop .checkbox label:after{width: 12px;height: 12px;line-height: 12px;top: 4px;font-size: 12px;}
+.chromePop .checkbox label{font-size: 16px;color: #7c7c7c;line-height: 1px;}
+
+.chromePop .buttonbox{font-size: 0;margin-top: 20px;}
+.chromePop .buttonbox a{display: inline-block;width: 50%;height: 55px;line-height: 55px;background-color : #ededed;color: #000;font-size: 18px;text-align: center;}
+.chromePop .buttonbox a.blue_btn{background-color: #0092ff; color: #fff}
+
+
+
+@media screen and (max-width:500px) { /* IOS plus */
+	.modal_inner{width: 90%; margin: 20px 0;}
+	.modal_footer a.pop_btn{width: calc(45% -  8px); margin: 0 4px;    font-size: 14px;}
+}

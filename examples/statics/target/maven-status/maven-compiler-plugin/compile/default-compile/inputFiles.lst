@@ -1,0 +1,13 @@
+C:\ws\msa-keycloak\custom-spi-source\statics\src\main\java\com\vaiv\statics\UserStaticsRepresentation.java
+C:\ws\msa-keycloak\custom-spi-source\statics\src\main\java\com\vaiv\statics\rest\UserStaticsRealmResourceProvider.java
+C:\ws\msa-keycloak\custom-spi-source\statics\src\main\java\com\vaiv\statics\rest\UserStaticsRestController.java
+C:\ws\msa-keycloak\custom-spi-source\statics\src\main\java\com\vaiv\statics\spi\UserStaticsServiceProviderFactory.java
+C:\ws\msa-keycloak\custom-spi-source\statics\src\main\java\com\vaiv\statics\spi\impl\UserStaticsServiceImpl.java
+C:\ws\msa-keycloak\custom-spi-source\statics\src\main\java\com\vaiv\statics\rest\UserStaticsResource.java
+C:\ws\msa-keycloak\custom-spi-source\statics\src\main\java\com\vaiv\statics\spi\UserStaticsSpi.java
+C:\ws\msa-keycloak\custom-spi-source\statics\src\main\java\com\vaiv\statics\rest\UserStaticsRealmResourceProviderFactory.java
+C:\ws\msa-keycloak\custom-spi-source\statics\src\main\java\com\vaiv\statics\spi\impl\UserStaticsServiceProviderFactoryImpl.java
+C:\ws\msa-keycloak\custom-spi-source\statics\src\main\java\com\vaiv\statics\jpa\UserStatics.java
+C:\ws\msa-keycloak\custom-spi-source\statics\src\main\java\com\vaiv\statics\spi\UserStaticsService.java
+C:\ws\msa-keycloak\custom-spi-source\statics\src\main\java\com\vaiv\statics\jpa\UserStaticsJpaEntityProvider.java
+C:\ws\msa-keycloak\custom-spi-source\statics\src\main\java\com\vaiv\statics\jpa\UserStaticsJpaEntityProviderFactory.java

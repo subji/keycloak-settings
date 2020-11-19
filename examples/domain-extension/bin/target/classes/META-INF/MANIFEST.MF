@@ -1,0 +1,27 @@
+Manifest-Version: 1.0
+Implementation-Title: Domain Extension Example
+Implementation-Version: 12.0.0-SNAPSHOT
+Java-Version: 1.8.0_201
+Built-By: Daumsoft
+Scm-Connection: scm:git:git://github.com/keycloak/keycloak.git/keycloa
+ k-examples-parent/keycloak-examples-providers-parent/keycloak-example
+ s-providers-domain-extension
+Specification-Vendor: JBoss by Red Hat
+Os-Arch: amd64
+Specification-Title: Domain Extension Example
+Implementation-Vendor-Id: org.keycloak
+Java-Vendor: Oracle Corporation
+Os-Name: Windows 10
+Scm-Url: https://github.com/keycloak/keycloak/tree/master/keycloak-exa
+ mples-parent/keycloak-examples-providers-parent/keycloak-examples-pro
+ viders-domain-extension/
+Implementation-Vendor: JBoss by Red Hat
+Os-Version: 10.0
+Scm-Revision: 
+Build-Jdk: 1.8.0_201
+Specification-Version: 12.0
+Created-By: Maven Integration for Eclipse
+Implementation-URL: http://keycloak.org/keycloak-examples-parent/keycl
+ oak-examples-providers-parent/keycloak-examples-providers-domain-exte
+ nsion
+

@@ -1,0 +1,15 @@
+org/keycloak/examples/domainextension/spi/ExampleServiceProviderFactory.class
+org/keycloak/examples/domainextension/rest/CompanyResource.class
+org/keycloak/examples/domainextension/jpa/ExampleJpaEntityProviderFactory.class
+org/keycloak/examples/domainextension/spi/ExampleService.class
+org/keycloak/examples/domainextension/jpa/ExampleJpaEntityProvider.class
+org/keycloak/examples/domainextension/jpa/MemberStatistics.class
+org/keycloak/examples/domainextension/spi/impl/ExampleServiceImpl.class
+org/keycloak/examples/domainextension/rest/ExampleRealmResourceProvider.class
+org/keycloak/examples/domainextension/rest/ExampleRestResource.class
+org/keycloak/examples/domainextension/CompanyRepresentation.class
+org/keycloak/examples/domainextension/MemberStatisticsDTO.class
+org/keycloak/examples/domainextension/rest/ExampleRealmResourceProviderFactory.class
+org/keycloak/examples/domainextension/spi/ExampleSpi.class
+org/keycloak/examples/domainextension/jpa/Company.class
+org/keycloak/examples/domainextension/spi/impl/ExampleServiceProviderFactoryImpl.class

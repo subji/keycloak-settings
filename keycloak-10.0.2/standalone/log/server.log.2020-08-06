@@ -1,0 +1,51 @@
+2020-08-06 21:59:28,871 ERROR [org.jboss.jca.core.tx.jbossts.XAResourceRecoveryImpl] (Periodic Recovery) IJ000906: Error during crash recovery: java:jboss/datasource/UserStoreXADS (IJ031084: Unable to create connection): javax.resource.ResourceException: IJ031084: Unable to create connection
+	at org.jboss.jca.adapters.jdbc.xa.XAManagedConnectionFactory.getXAManagedConnection(XAManagedConnectionFactory.java:531)
+	at org.jboss.jca.adapters.jdbc.xa.XAManagedConnectionFactory$1$1.run(XAManagedConnectionFactory.java:417)
+	at org.jboss.jca.adapters.jdbc.xa.XAManagedConnectionFactory$1$1.run(XAManagedConnectionFactory.java:414)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:422)
+	at org.jboss.jca.adapters.jdbc.xa.XAManagedConnectionFactory$1.run(XAManagedConnectionFactory.java:413)
+	at org.jboss.jca.adapters.jdbc.xa.XAManagedConnectionFactory$1.run(XAManagedConnectionFactory.java:410)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.jboss.jca.adapters.jdbc.xa.XAManagedConnectionFactory.createManagedConnection(XAManagedConnectionFactory.java:409)
+	at org.jboss.jca.core.tx.jbossts.XAResourceRecoveryImpl.open(XAResourceRecoveryImpl.java:355)
+	at org.jboss.jca.core.tx.jbossts.XAResourceRecoveryImpl.getXAResources(XAResourceRecoveryImpl.java:218)
+	at com.arjuna.ats.internal.jbossatx.jta.XAResourceRecoveryHelperWrapper.getXAResources(XAResourceRecoveryHelperWrapper.java:51)
+	at com.arjuna.ats.internal.jta.recovery.arjunacore.XARecoveryModule.resourceInitiatedRecoveryForRecoveryHelpers(XARecoveryModule.java:603)
+	at com.arjuna.ats.internal.jta.recovery.arjunacore.XARecoveryModule.periodicWorkFirstPass(XARecoveryModule.java:221)
+	at com.arjuna.ats.internal.jta.recovery.arjunacore.XARecoveryModule.periodicWorkFirstPass(XARecoveryModule.java:171)
+	at com.arjuna.ats.internal.arjuna.recovery.PeriodicRecovery.doWorkInternal(PeriodicRecovery.java:770)
+	at com.arjuna.ats.internal.arjuna.recovery.PeriodicRecovery.run(PeriodicRecovery.java:382)
+Caused by: java.sql.SQLNonTransientConnectionException: Could not connect to address=(host=10.1.51.26)(port=3306)(type=master) : Socket fail to connect to host:10.1.51.26, port:3306. Connection timed out: connect
+	at org.mariadb.jdbc.internal.util.exceptions.ExceptionFactory.createException(ExceptionFactory.java:73)
+	at org.mariadb.jdbc.internal.util.exceptions.ExceptionFactory.create(ExceptionFactory.java:153)
+	at org.mariadb.jdbc.MariaDbDataSource.getConnection(MariaDbDataSource.java:305)
+	at org.mariadb.jdbc.MariaDbDataSource.getXAConnection(MariaDbDataSource.java:458)
+	at org.jboss.jca.adapters.jdbc.xa.XAManagedConnectionFactory.getXAManagedConnection(XAManagedConnectionFactory.java:515)
+	... 16 more
+Caused by: java.sql.SQLNonTransientConnectionException: Could not connect to address=(host=10.1.51.26)(port=3306)(type=master) : Socket fail to connect to host:10.1.51.26, port:3306. Connection timed out: connect
+	at org.mariadb.jdbc.internal.util.exceptions.ExceptionFactory.createException(ExceptionFactory.java:73)
+	at org.mariadb.jdbc.internal.util.exceptions.ExceptionFactory.create(ExceptionFactory.java:192)
+	at org.mariadb.jdbc.internal.protocol.AbstractConnectProtocol.connectWithoutProxy(AbstractConnectProtocol.java:1372)
+	at org.mariadb.jdbc.internal.util.Utils.retrieveProxy(Utils.java:635)
+	at org.mariadb.jdbc.MariaDbConnection.newConnection(MariaDbConnection.java:150)
+	at org.mariadb.jdbc.MariaDbDataSource.getConnection(MariaDbDataSource.java:302)
+	... 18 more
+Caused by: java.sql.SQLNonTransientConnectionException: Socket fail to connect to host:10.1.51.26, port:3306. Connection timed out: connect
+	at org.mariadb.jdbc.internal.util.exceptions.ExceptionFactory.createException(ExceptionFactory.java:73)
+	at org.mariadb.jdbc.internal.util.exceptions.ExceptionFactory.create(ExceptionFactory.java:183)
+	at org.mariadb.jdbc.internal.protocol.AbstractConnectProtocol.createSocket(AbstractConnectProtocol.java:255)
+	at org.mariadb.jdbc.internal.protocol.AbstractConnectProtocol.createConnection(AbstractConnectProtocol.java:512)
+	at org.mariadb.jdbc.internal.protocol.AbstractConnectProtocol.connectWithoutProxy(AbstractConnectProtocol.java:1367)
+	... 21 more
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at java.net.TwoStacksPlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.mariadb.jdbc.internal.protocol.AbstractConnectProtocol.createSocket(AbstractConnectProtocol.java:250)
+	... 23 more
+
